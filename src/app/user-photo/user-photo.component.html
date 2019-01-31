@@ -1,0 +1,8 @@
+<ul *ngIf="photo$">
+    <li
+    *ngFor="let user of photo$.data">
+    <a routerLink="/user-photo/{{user.id}}">{{ user.title}}</a>
+    <img [src]="user-photo.id">
+    <p>{{user.title}} {{user.title}}</p>
+    </li>
+  </ul>
